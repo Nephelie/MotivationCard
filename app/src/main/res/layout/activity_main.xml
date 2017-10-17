@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nefeli.motivationcard.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/littlegirl" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_Left"
+        android:layout_marginTop="@dimen/margin_Top"
+        android:fontFamily="cursive"
+        android:text="@string/remember_that_every_expert..."
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_Left"
+        android:layout_toRightOf="@+id/text_a"
+        android:fontFamily="cursive"
+        android:text="@string/beginner"
+        android:textColor="#1928b6"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_once"
+        android:layout_marginLeft="@dimen/margin_Left"
+        android:fontFamily="cursive"
+        android:text="@string/was"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:id="@+id/text_once"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/beginner"
+        android:layout_marginLeft="@dimen/margin_Left"
+        android:fontFamily="cursive"
+        android:text="@string/once"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_Left"
+        android:fontFamily="cursive"
+        android:text="@string/a"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
